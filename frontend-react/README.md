@@ -71,3 +71,20 @@ export default defineConfig([
   },
 ])
 ```
+
+---
+
+## 🔹 `frontend-react/README.md`
+
+This can be **shorter**, frontend-only:
+
+```md
+# Frontend (React)
+
+React + TypeScript frontend for AI-ChatboxIEX.
+
+## Run locally
+
+```bash
+npm install
+npm run dev
