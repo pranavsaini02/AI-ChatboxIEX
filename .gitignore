@@ -1,0 +1,48 @@
+# ======================
+# OS
+# ======================
+.DS_Store
+
+# ======================
+# Backend (Python)
+# ======================
+Backend/.venv/
+Backend/__pycache__/
+Backend/src/__pycache__/
+Backend/cache/
+Backend/exports/
+Backend/uploads/
+Backend/.env
+Backend/*.log
+
+# Debug / experimental (excluded by choice)
+Backend/debug_*.py
+Backend/test_*.py
+Backend/tools/
+Backend/safe/
+
+# ======================
+# Frontend (Node / React)
+# ======================
+frontend-react/node_modules/
+frontend-react/dist/
+frontend-react/.vscode/
+
+# ======================
+# IDE
+# ======================
+.vscode/
+.idea/
+
+# ======================
+# Generated artifacts
+# ======================
+*.pdf
+*.db
+*.sqlite
+
+# Ignore all txt files
+*.txt
+
+# Except Python requirements
+!requirements.txt

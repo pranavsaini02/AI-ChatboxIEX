@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .message-bubble {
+    @apply max-w-3xl mx-auto px-6 py-4 rounded-2xl;
+  }
+  
+  .message-user {
+    @apply bg-blue-600 text-white ml-auto;
+  }
+  
+  .message-assistant {
+    @apply bg-white border border-gray-200;
+  }
+  
+  .input-chat {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-300 
+           focus:border-blue-500 focus:ring-2 focus:ring-blue-200 
+           outline-none transition-all resize-none;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white 
+           px-4 py-2 rounded-lg transition-colors 
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+}
+@layer components {
+  .glass {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(22px) saturate(160%);
+    -webkit-backdrop-filter: blur(22px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  }
+
+  .dark .glass {
+    background: rgba(17, 24, 39, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* Premium glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(22px) saturate(160%);
+  -webkit-backdrop-filter: blur(22px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.dark .glass {
+  background: rgba(17, 24, 39, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+/* ============================
+   Glass Hierarchy (Premium UI)
+   ============================ */
+
+.glass-sm {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.dark .glass-sm {
+  background: rgba(17, 24, 39, 0.55);
+}
+
+.glass-md {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.dark .glass-md {
+  background: rgba(17, 24, 39, 0.35);
+}
+
+.glass-lg {
+  backdrop-filter: blur(24px);
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.dark .glass-lg {
+  background: rgba(17, 24, 39, 0.22);
+}
